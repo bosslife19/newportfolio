@@ -56,8 +56,12 @@ export const ProjectsSection = () => {
       <p className="text-center text-white/60 mt-4 md:text-lg lg:text-xl max-w-md mx-auto">See how I transformed concepts into engaging digital experiences</p>
 
       <div className="flex flex-col mt-10 gap-20 md:mt-20">
-        {portfolioProjects.map((project)=>(
-          <div key={project.title} className="bg-gray-800 md:pt-12 md:px-10 rounded-3xl lg:pt-16 lg:px-20 relative z-0 after:z-10 overflow-hidden after:content-[''] after:absolute after:inset-0 after:outline-2 after:outline after:-outline-offset-2 after:rounded-3xl after:outline-white/20 px-8 pt-8 after:pointer-events-none">
+        {portfolioProjects.map((project, projectIndex)=>(
+          <div key={project.title} className="bg-gray-800 md:pt-12 md:px-10 rounded-3xl lg:pt-16 lg:px-20 z-0 after:z-10 overflow-hidden after:content-[''] after:absolute after:inset-0 after:outline-2 after:outline after:-outline-offset-2 after:rounded-3xl after:outline-white/20 px-8 pt-8 after:pointer-events-none sticky"
+          style={{
+            top:`calc(64px + ${projectIndex * 45}px)`
+          }}
+          >
            <div className="absolute inset-0 -z-10 opacity-5" style={{backgroundImage: `url(${grainImage.src})`}}></div>
            <div className="lg:grid lg:grid-cols-2 lg:gap-16">
             <div className="lg:pb-16">
