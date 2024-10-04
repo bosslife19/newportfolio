@@ -1,4 +1,4 @@
-  import memojiImage from '@/assets/images/memoji-computer.png';
+  import memojiImage from '@/assets/images/me.png';
 import Image from 'next/image';
 import ArrowDown from '@/assets/icons/arrow-down.svg'
 import grainImage from '@/assets/images/grain.jpg'
@@ -64,8 +64,8 @@ export const HeroSection = () => {
     </div>
     <div className="container">
       <div className='flex flex-col items-center'>
-      <Image src={memojiImage} className='size-[100px]' alt='My headshot'/>
-      <div className='bg-gray-950 border border-gray-800 px-4 py-1.5 inline-flex items-center gap-4 rounded-lg'>
+      <Image src={memojiImage} className='size-[350px] ob' alt='My headshot'/>
+      <div className='bg-gray-950 border border-gray-800 px-4 py-1.5 inline-flex items-center gap-4 rounded-lg mt-2'>
         <div className='bg-green-500 size-2.5 rounded-full relative'>
           <div className="bg-green-500 absolute inset-0 animate-ping-large rounded-full"></div>
         </div>
@@ -73,9 +73,10 @@ export const HeroSection = () => {
       </div>
       </div>
         <div className='max-w-lg mx-auto'>
-        <h1 className='font-serif text-3xl text-center mt-8 tracking-wide md:text-5xl'>Building Exceptional User Experiences</h1>
+       
+        <h1 className='font-serif text-3xl text-center mt-8 tracking-wide md:text-4xl'>Hi there, I'm Woko David</h1>
       <p className='mt-4 text-center text-white/60 md:text-lg'>
-        I specialize in transforming designs into functional, high-performing web applications. Let's discuss your next project.
+        Let's build something cool together!
       </p>
         </div>
         
