@@ -1,7 +1,7 @@
 import StarIcon from '@/assets/icons/star.svg'
 import { Fragment } from 'react';
 export const TapeSection = () => {
-  const words = ['Performant','Accessible', 'Secure', 'Interactive', 'Scalable','User Friendly', 'Responsive','Maintainable', 'Search Optimized', "Usable",'Reliable']
+  const words = ['Performant','Optimized', 'Secure', 'Interactive', 'Scalable','User Friendly', 'Responsive','Maintainable', 'Search Optimized', "Usable",'Reliable']
   return <div className='py-16 lg:py-24 overflow-x-clip'>
     <div className='bg-gradient-to-r from-emerald-300 to-sky-400 -rotate-3 -mx-1'>
       <div className='flex [mask-image:linear-gradient(to_right, transparent, black_10%,black_90%,transparent)]'>

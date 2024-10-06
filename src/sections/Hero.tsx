@@ -6,7 +6,7 @@ import StarIcon from '@/assets/icons/star.svg';
 import SparkleIcon from '@/assets/icons/sparkle.svg'
 import { HeroOrbit } from '@/components/HeroOrbit';
 export const HeroSection = () => {
-  return <div className='py-32 md:py-48 lg:py-48 relative z-0 overflow-x-clip'>
+  return <div className='py-32 md:py-48 lg:py-48 relative z-0 overflow-x-clip' id='Home'>
     <div className='absolute inset-0 [mask-image:linear-gradient(to_bottom, transparent, black_10%,black_70%,transparent)'>
     <div className="absolute inset-0 -z-30 opacity-5" style={{backgroundImage: `url(${grainImage.src})`}}></div>
     <div className="size-[620px] absolute inset-0  border-2 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full border-emerald-300/5 shadow-[0_0_80px_inset] shadow-emerald-300/5"></div>
@@ -81,16 +81,16 @@ export const HeroSection = () => {
         </div>
         
      
-      <div className='flex flex-col md:flex-row justify-center items-center mt-8 gap-4'>
-        <button className='inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl'>
-          <span className='font-semibold'>Explore My Work</span>
+      {/* <div className='flex flex-col md:flex-row justify-center items-center mt-20 gap-4'>
+        <a className='inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl cursor-pointer'  href='/Woko David Resume.pdf' download>
+          <span className='font-semibold'>Download Resume</span>
           <ArrowDown className='size-4'/>
-        </button>
-        <button className='inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl'>
+        </a>
+        <a href='https://www.linkedin.com/in/obiomachukwu-woko-602158256?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' className='inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl cursor-pointer'>
           <span></span>
           <span className='font-semibold'>Let's Connect</span>
-        </button>
-      </div>
+        </a>
+      </div> */}
     </div>
   </div>;
 };

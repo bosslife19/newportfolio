@@ -1,20 +1,14 @@
 import ArrowUpRightIcon from '@/assets/icons/arrow-up-right.svg'
 const footerLinks = [
-  {
-    title:'Youtube',
-    href: '#'
-  },
+
   {
     title:'Twitter',
-    href: '#'
+    href: 'https://x.com/Davidwoks1?t=MR1qylo7iIQ4SSuPMSKmAw&s=09'
   },
-  {
-    title:'Instagram',
-    href: '#'
-  },
+  
   {
     title:'LinkedIn',
-    href: '#'
+    href: 'https://www.linkedin.com/in/obiomachukwu-woko-602158256?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'
   },
 ]
 export const Footer = () => {

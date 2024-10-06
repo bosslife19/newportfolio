@@ -1,6 +1,4 @@
-import darkSaasLandingPage from "@/assets/images/dark-saas-landing-page.png";
-import lightSaasLandingPage from "@/assets/images/light-saas-landing-page.png";
-import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
+
 import CheckIcon from "@/assets/icons/check-circle.svg"
 import ArrowUpRight from "@/assets/icons/arrow-up-right.svg"
 import grainImage from "@/assets/images/grain.jpg"
@@ -8,52 +6,80 @@ import Image from "next/image";
 
 const portfolioProjects = [
   {
-    company: "Acme Corp",
-    year: "2022",
-    title: "Dark Saas Landing Page",
+    company: "EDOSUBEB",
+    year: "2024",
+    title: "EDOSUBEB Inventory Management System",
     results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
+      { title: "Used React and React-Bootstrap to build the UI from the Figma design" },
+      { title: "Used Laravel on the backend to write the REST API" },
+      { title: "Optimized the system to handle data of over 1200 schools and over 56000 items of inventory efficiently" },
+      { title: "Provided features like data filtering, inventory tracking, role-based authentication, email notifications/scheduling,etc" },
     ],
-    link: "https://youtu.be/4k7IdSLxh6w",
-    image: darkSaasLandingPage,
+    link: "https://www.edosubebims.com/",
+    src: '/port-videos/edosubeb.mp4',
   },
   {
-    company: "Innovative Co",
-    year: "2021",
-    title: "Light Saas Landing Page",
+    company: "Authentic Alabama",
+    year: "2024",
+    title: "Authentic Alabama Fans Football items E-Shop",
     results: [
-      { title: "Boosted sales by 20%" },
-      { title: "Expanded customer reach by 35%" },
-      { title: "Increased brand awareness by 15%" },
+      { title: "Built using WordPress CMS" },
+      { title: "Integrated live bidding using Ultimate Auction Plugin Pro" },
+      { title: "Integrated multiple payment gateways (Stripe, Paypal)" },
+      { title: "Provided features like Silent Bidding, Proxy Bidding, Email Notifications, Countdown timers etc" },
     ],
-    link: "https://youtu.be/7hi5zwO75yc",
-    image: lightSaasLandingPage,
+    link: "https://authenticalabamafans.com/",
+    src: '/port-videos/authenticalabama.mp4',
   },
   {
-    company: "Quantum Dynamics",
+    company: "FuseIO",
     year: "2023",
-    title: "AI Startup Landing Page",
+    title: "FUSEIO Landing Page",
     results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
+      { title: "Pixel perfect design from Figma" },
+      { title: "User-friendly/mobile responsive layout using TailwindCSS" },
+      { title: "Implemented MailChimp to collect emails" },
     ],
-    link: "https://youtu.be/Z7I5uSRHMHg",
-    image: aiStartupLandingPage,
+    link: "https://myfuse.io/",
+    src: '/port-videos/fuseio.mp4',
+  },
+  {
+    company: "DOWELL UX Living Labs",
+    year: "2024",
+    title: "Samantha Content Evaluator",
+    results: [
+      { title: "Built out the mobile responsive and user-friendly UI using React" },
+      { title: "Evaluates text content to determine if its AI Generated or not" },
+      { title: "Keeps track of number of times the software is used by a particular user" },
+      // { title: "Sends result to user's valid email (returns an error if email does not exist)" },
+    ],
+    link: "https://www.uxlivinglab.org/products/samanta_content_evaluator/",
+    src: '/port-videos/samantha.mp4',
+  },
+  {
+    company: "EZ Drive",
+    year: "2024",
+    title: "EZ Drive Mobile App",
+    results: [
+      { title: "Cross-Platform and user-friendly application built using React Native" },
+      { title: "Remotely Connect to IOT devices in every EZ Drive Vehicle" },
+      { title: "Execute commands remotely to open/close car doors and trunk through the app" },
+      { title: "Get the location, battery status and condition of each vehicle in EZ Drive" },
+    ],
+    link: "https://github.com/bosslife19/ez-car-rentals-mobile-app",
+    src: '/port-videos/ezdrive.mp4',
   },
 ];
 
 export const ProjectsSection = () => {
-  return <div className="pb-16 lg:py-24">
+  return <div className="pb-16 lg:py-24" id='Projects'>
     <div className="container">
       <div className="flex justify-center">
       <p className="uppercase font-semibold tracking-widest bg-gradient-to-r from-emerald-300 to-sky-400 text-transparent bg-clip-text ">Real-world Results</p>
       </div>
       
-      <h2 className="font-serif text-3xl text-center mt-6 md:text-5xl">Featured Projects</h2>
-      <p className="text-center text-white/60 mt-4 md:text-lg lg:text-xl max-w-md mx-auto">See how I transformed concepts into engaging digital experiences</p>
+      <h2 className="font-serif text-3xl text-center mt-6 md:text-5xl">Most Recent Projects</h2>
+      <p className="text-center text-white/60 mt-4 md:text-lg lg:text-xl max-w-md mx-auto">How I have brought Ideas to digital realties for my clients</p>
 
       <div className="flex flex-col mt-10 gap-20 md:mt-20">
         {portfolioProjects.map((project, projectIndex)=>(
@@ -75,13 +101,13 @@ export const ProjectsSection = () => {
               
               
            
-            <h3 className="font-serif text-2xl mt-2 md:text-4xl md:mt-5">{project.title}</h3>
+            <h3 className="font-serif text-2xl mt-2 md:text-3xl md:mt-5">{project.title}</h3>
             <hr className="border-t-2 border-white/5 mt-4 md:mt-5"/>
             <ul className="flex flex-col gap-4 mt-4 md:mt-5">
               {project.results.map(result=>(
                 <li key={result.title} className="flex gap-2 text-sm text-white/50 md:text-base">
                   <CheckIcon className="size-5 md:size-6"/>
-                  <span>{result.title}</span>
+                  <span className="md:w-3/4 ">{result.title}</span>
                   </li>
               ))}
             </ul>
@@ -93,7 +119,12 @@ export const ProjectsSection = () => {
             </div>
 
             <div className="relative">
-            <Image src={project.image} alt={project.title} className='mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:absolute lg:h-full lg:max-w-none lg:w-auto'/>
+              <video width="500" height="500" controls autoPlay muted className="mt-8 -mb-4 md:-mb-0 lg:absolute lg:-left-10 lg:mt-0 object-contain lg:h-full lg:max-w-none" >
+      <source src={project.src} type="video/mp4"  />
+     
+      Your browser does not support the video tag.
+    </video>
+            {/* <Image src={project.image} alt={project.title} className='mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:absolute lg:h-full lg:max-w-none lg:w-auto'/> */}
             </div>
              
               </div>
