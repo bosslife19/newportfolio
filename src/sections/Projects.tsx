@@ -16,7 +16,7 @@ const portfolioProjects = [
       { title: "Provided features like data filtering, inventory tracking, role-based authentication, email notifications/scheduling,etc" },
     ],
     link: "https://www.edosubebims.com/",
-    src: '/port-videos/edosubeb.mp4',
+    src: 'https://centusvest.com/storage/app/public/photos/edosubeb.mp4',
   },
   {
     company: "Authentic Alabama",
@@ -29,7 +29,7 @@ const portfolioProjects = [
       { title: "Provided features like Silent Bidding, Proxy Bidding, Email Notifications, Countdown timers etc" },
     ],
     link: "https://authenticalabamafans.com/",
-    src: '/port-videos/authenticalabama.mp4',
+    src: 'https://centusvest.com/storage/app/public/photos/authenticalabama.mp4',
   },
   {
     company: "FuseIO",
@@ -41,7 +41,7 @@ const portfolioProjects = [
       { title: "Implemented MailChimp to collect emails" },
     ],
     link: "https://myfuse.io/",
-    src: '/port-videos/fuseio.mp4',
+    src: 'https://centusvest.com/storage/app/public/photos/fuseio.mp4',
   },
   {
     company: "DOWELL UX Living Labs",
@@ -54,7 +54,7 @@ const portfolioProjects = [
       // { title: "Sends result to user's valid email (returns an error if email does not exist)" },
     ],
     link: "https://www.uxlivinglab.org/products/samanta_content_evaluator/",
-    src: '/port-videos/samantha.mp4',
+    src: 'https://centusvest.com/storage/app/public/photos/samantha.mp4',
   },
   {
     company: "EZ Drive",
@@ -67,7 +67,7 @@ const portfolioProjects = [
       { title: "Get the location, battery status and condition of each vehicle in EZ Drive" },
     ],
     link: "https://github.com/bosslife19/ez-car-rentals-mobile-app",
-    src: '/port-videos/ezdrive.mp4',
+    src: 'https://centusvest.com/storage/app/public/photos/ezdrive.mp4',
   },
 ];
 
