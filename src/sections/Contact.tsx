@@ -1,7 +1,7 @@
 import ArrowUpRight from '@/assets/icons/arrow-up-right.svg'
 import grainImage from '@/assets/images/grain.jpg'
 import { url } from 'inspector';
-export const ContactSection = () => {
+ const ContactSection = () => {
   return <div className='py-16 pt-12 lg:py-24 lg:pt-20' id='Contact'>
     <div className="container">
       <div className='bg-gradient-to-r from-emerald-300 overflow-hidden
@@ -26,3 +26,5 @@ export const ContactSection = () => {
     
   </div>;
 };
+
+export default ContactSection

@@ -30,7 +30,7 @@ const testimonials = [
 
 ];
 
-export const TestimonialsSection = () => {
+const TestimonialsSection = () => {
   return <div className="py-16 lg:py-24">
 
     <div className="container">
@@ -72,3 +72,5 @@ export const TestimonialsSection = () => {
     </div>
   </div>;
 };
+
+export default TestimonialsSection

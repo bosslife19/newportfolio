@@ -96,7 +96,7 @@ left:'50%',
 },
 
 ]
-export const AboutSection = () => {
+ const AboutSection = () => {
   const constraintRef = useRef(null)
   return <div className='py-20 lg:py-28' id='About'>
     <div className="container">
@@ -155,3 +155,5 @@ export const AboutSection = () => {
   </div>;
   </div>
 };
+
+export default AboutSection;

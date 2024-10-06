@@ -11,7 +11,7 @@ const footerLinks = [
     href: 'https://www.linkedin.com/in/obiomachukwu-woko-602158256?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'
   },
 ]
-export const Footer = () => {
+const Footer = () => {
   return <footer className='relative -z-10 overflow-x-clip'>
     <div className="absolute h-[400px] w-[1600px] bottom-0 left-1/2 -translate-x-1/2 bg-emerald-300/30 
     [mask-image:radial-gradient(50%_50%_at_bottom_center,black,transparent)] -z-10"></div>
@@ -34,3 +34,5 @@ export const Footer = () => {
     </div>
   </footer>;
 };
+
+export default Footer
