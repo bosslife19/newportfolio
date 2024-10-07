@@ -9,7 +9,7 @@ import  TestimonialsSection  from "@/sections/Testimonials";
 export default function Home() {
   return (
     <div>
-      <header>hello</header>
+      <header>hellos</header>
       <Header/>
       <HeroSection/>
       <ProjectsSection/>
