@@ -1,6 +1,6 @@
  
-//  import StarIcon from '@/assets/icons/star.svg'
- import Image from 'next/image';
+import StarIcon from '@/assets/icons/star.svg'
+ 
 import { Fragment } from 'react';
  const TapeSection = () => {
   
@@ -15,8 +15,8 @@ import { Fragment } from 'react';
               {words.map(word=>(
             <div key={word} className='inline-flex gap-4 items-center'>
               <span className='text-gray-900 uppercase font-extrabold text-sm'>{word}</span>
-              <Image alt='star' src='/assets/icons/star.svg' className='size-6 text-gray-900 -rotate-12' width={24} height={24}/>
-              {/* <StarIcon className='size-6 text-gray-900 -rotate-12'/> */}
+              {/* <Image alt='star' src='/assets/icons/star.svg' className='size-6 text-gray-900 -rotate-12' width={24} height={24}/> */}
+              <StarIcon className='size-6 text-gray-900 -rotate-12'/>
               
             </div>
           ))}
