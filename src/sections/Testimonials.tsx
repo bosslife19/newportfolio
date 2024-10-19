@@ -31,6 +31,7 @@ const testimonials = [
 ];
 
 const TestimonialsSection = () => {
+ 
   return <div className="py-16 lg:py-24">
 
     <div className="container">

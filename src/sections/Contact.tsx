@@ -1,7 +1,8 @@
 import ArrowUpRight from '@/assets/icons/arrow-up-right.svg'
 import grainImage from '@/assets/images/grain.jpg'
-import { url } from 'inspector';
+
  const ContactSection = () => {
+  
   return <div className='py-16 pt-12 lg:py-24 lg:pt-20' id='Contact'>
     <div className="container">
       <div className='bg-gradient-to-r from-emerald-300 overflow-hidden
@@ -15,7 +16,7 @@ import { url } from 'inspector';
     <div>
  <a href='mailto:wokodavid001@gmail.com' className='text-white bg-gray-900 inline-flex items-center px-6 h-12 rounded-xl gap-2 w-max border border-gray-900'>
       <span className='font-semibold'>Contact Me</span>
-      <ArrowUpRight className='size-4'/>
+      {/* <ArrowUpRight className='size-4'/> */}
       </a>
     </div>
    
