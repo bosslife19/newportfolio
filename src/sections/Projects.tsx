@@ -113,7 +113,7 @@ const ProjectsSection = () => {
               ))}
             </ul>
             <a href={project.link}>
-            <button className="bg-white md:w-auto px-6 text-gray-950 h-12 w-full rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8"><span>Visit Live Site</span> 
+            <button className="bg-white md:w-auto px-6 text-gray-950 h-12 w-full rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8"><span>View Project</span> 
               <ArrowUpRight className="size-4"/>
             </button>
             </a>
