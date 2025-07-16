@@ -1,6 +1,7 @@
 import memojiAvatar1 from "@/assets/images/memoji-avatar-1.png";
 import memojiAvatar2 from "@/assets/images/martins.png";
 import memojiAvatar3 from "@/assets/images/uchejames.png";
+import gloria from '@/assets/images/gloria.jpg'
 
 import { SectionHeader } from "@/components/SectionHeader";
 import grainImage from '@/assets/images/grain.jpg'
@@ -14,6 +15,11 @@ const testimonials = [
     position: "CEO @ 2HIRE",
     text: "Working with David was a real pleasure. His attention to while going through our API Docs was truly exceptional.",
     avatar: memojiAvatar1,
+  },
+  {
+    name:'Gloria Niiquaye',
+    position: 'Fouder @ COMESO GMBH',
+    text:'I contracted David to build my startup COMESO. The speed at which he delivered was exceptional. Within a month the MVP for the platform was ready for testing!',
   },
   {
     name: "Martins Egbokhabho",

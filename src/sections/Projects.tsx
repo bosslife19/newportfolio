@@ -36,17 +36,17 @@ const portfolioProjects = [
   {
     company: "COMESO GMBH",
     year: "2024",
-    title: "COMESO Web",
+    title: "COMESO Web Version",
     results: [
-      { title: "Built a secure web dashboard for patients and healthcare providers" },
+      { title: "Built a secure web dashboard for the Admin and healthcare providers" },
       { title: "Implemented voucher management for creating and redeeming health vouchers" },
       { title: "Integrated Paystack for purchasing vouchers online" },
       { title: "Built real-time analytics for voucher usage and service access" },
-      { title: "Developed secure multi-role authentication (Admin, Provider, Patient)" },
+      { title: "Developed secure multi-role authentication (Admin and Healthcare Provider)" },
       { title: "Enabled clinic onboarding and management from the admin panel" },
-      { title: "Created reporting tools for tracking clinic performance and voucher redemptions" }
+      
     ],
-    link: "https://comeso.de",
+    link: "https://mycomeso.com",
     github: "https://github.com/bosslife19/ComesoWeb",
     src: comesoWeb // replace with actual image path/variable
   },
@@ -68,7 +68,7 @@ const portfolioProjects = [
   },
   {
     company: "LUA Fitness",
-    year: "2024",
+    year: "2025",
     title: "LUA – Workout & Progress Tracker",
     results: [
       { title: "Built a fitness app using React Native and Expo" },
@@ -83,7 +83,7 @@ const portfolioProjects = [
     src: luaImage
   },
   {
-    company: "Internal Tool – COMESO GMBH",
+    company: "Internal Tool – Lopsim Technologies Ltd",
     year: "2024",
     title: "Email Campaign & Event Management Platform",
     results: [
@@ -102,7 +102,7 @@ const portfolioProjects = [
   },
   {
     company: "SweetGod Heights Schools",
-    year: "2024",
+    year: "2025",
     title: "SweetGodHeightsSchools – School Management System",
     results: [
       { title: "Robust school management platform built with Laravel" },
@@ -119,19 +119,22 @@ const portfolioProjects = [
     src: sweetgod
   },
     {
-    company: "EDOSUBEB",
-    year: "2024",
-    title: "EDOSUBEB Inventory Management System",
-    results: [
-      { title: "Used React and React-Bootstrap to build the UI from the Figma design" },
-      { title: "Used Laravel on the backend to write the REST API" },
-      { title: "Optimized the system to handle data of over 1200 schools and over 56000 items of inventory efficiently" },
-      { title: "Provided features like data filtering, inventory tracking, role-based authentication, email notifications/scheduling,etc" }
-    ],
-    link: "https://www.edosubebims.com/",
-    src: edosubeb,
-    github:'https://github.com/bosslife19/imsdemo.git'
-  },
+  company: "Internal Tool – EDO State Universal Basic Education Board (EDOSUBEB)",
+  year: "2024",
+  title: "EDOSUBEB Inventory Management System",
+  results: [
+    { title: "Built specifically for EDOSUBEB to manage educational infrastructure across 1200+ public schools" },
+    { title: "Tracked over 56,000 inventory items including desks, books, electronics, and classroom materials" },
+    { title: "Enabled real-time inventory updates and accountability at both school and LGA levels" },
+    { title: "Included smart filtering, status tracking, and audit-friendly reporting tools" },
+    { title: "Supported multi-role access for administrators, supervisors, and logistics staff" },
+    { title: "Improved transparency, reduced loss, and simplified asset management processes for government stakeholders" }
+  ],
+  link: "https://www.edosubebims.com/",
+  github: "https://github.com/bosslife19/imsdemo.git",
+  src: edosubeb
+}
+
 ];
 
 
@@ -143,7 +146,7 @@ const ProjectsSection = () => {
       <p className="uppercase font-semibold tracking-widest bg-gradient-to-r from-emerald-300 to-sky-400 text-transparent bg-clip-text ">Real-world Results</p>
       </div>
       
-      <h2 className="font-serif text-3xl text-center mt-6 md:text-5xl">Most Recent Projects</h2>
+      <h2 className="font-serif text-3xl text-center mt-6 md:text-5xl">Software Products</h2>
       <p className="text-center text-white/60 mt-4 md:text-lg lg:text-xl max-w-md mx-auto">How I have brought Ideas to digital realties for my clients</p>
 
       <div className="flex flex-col mt-10 gap-20 md:mt-20">
@@ -180,7 +183,7 @@ const ProjectsSection = () => {
               {/* <ArrowUpRight className="size-3"/> */}
             </button>
             </a>
-             <a href={project.link}>
+             <a href={project.github}>
             <button className="bg-white md:w-auto px-6 text-gray-950 h-12 w-full rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8"><span>View on Github</span> 
               {/* <ArrowUpRight className="size-3"/> */}
             </button>
@@ -194,11 +197,8 @@ const ProjectsSection = () => {
             </div>
 
             <div className="relative">
-              <video width="500" height="500" controls autoPlay muted className="mt-8 -mb-4 md:-mb-0 lg:absolute lg:-left-10 lg:mt-0 object-contain lg:h-full lg:max-w-none" >
-      <source src={project.src} type="video/mp4"  />
+              <Image alt="Project Image" src={project.src} width="500" height="500" className="mt-8 -mb-4 md:-mb-0 lg:absolute lg:-left-10 lg:mt-0 object-contain lg:h-full lg:max-w-none" />
      
-      Your browser does not support the video tag.
-    </video>
             {/* <Image src={project.image} alt={project.title} className='mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:absolute lg:h-full lg:max-w-none lg:w-auto'/> */}
             </div>
              

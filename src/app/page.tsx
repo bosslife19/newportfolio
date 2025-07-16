@@ -6,6 +6,7 @@ import  HeroSection  from "@/sections/Hero";
 import  ProjectsSection  from "@/sections/Projects";
 import  TapeSection  from "@/sections/Tape";
 import  TestimonialsSection  from "@/sections/Testimonials";
+import WebsitesSection from "@/sections/Websites";
 export default function Home() {
   return (
     <div>
@@ -13,6 +14,8 @@ export default function Home() {
       <Header/>
       <HeroSection/>
       <ProjectsSection/>
+      <WebsitesSection/>
+
       <TapeSection/>
       <TestimonialsSection/>
       <AboutSection/>

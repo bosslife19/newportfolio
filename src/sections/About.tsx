@@ -11,6 +11,7 @@ import CSSiCON from '@/assets/icons/css3.svg'
 import ChromeIcon from '@/assets/icons/chrome.svg'
 import GitIcon from '@/assets/icons/github.svg'
 import LaravelIcon from '@/assets/icons/laravel.svg'
+import WordpressIcon from '@/assets/icons/wordpress.svg'
 
 
 import smileMemoji from '@/assets/images/me.png'
@@ -22,6 +23,7 @@ const toolBoxItems = [{
   title: 'Javascript',
   iconType:JavaScriptIcon
 },
+
 {
   title: 'HTML5',
   iconType:HTMLICON
@@ -42,6 +44,10 @@ const toolBoxItems = [{
   title: 'Laravel',
   iconType:LaravelIcon
 },
+{
+  title:'Wordpress',
+  iconType:WordpressIcon
+}
 
 ]
 
@@ -59,13 +65,7 @@ left:'50%',
   top: '5%'
 },
 
-{
-  title:'Hiking',
-  emoji: '',
-  left:'35%',
-  top: '40%'
 
-},
 {
   title:'Gaming',
   emoji: '',
@@ -81,7 +81,7 @@ left:'50%',
 
 },
 {
-  title:'Fitness',
+  title:'Chess',
   emoji: '',
   left:'5%',
   top: '65%'
