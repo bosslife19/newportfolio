@@ -11,7 +11,7 @@ import grainImage from '@/assets/images/grain.jpg'
      <div className="flex flex-col md:flex-row gap-8 items-center md:gap-16">
       <div>
 <h2 className='font-serif text-2xl md:text-3xl '>Let's Build something amazing together</h2>
-    <p className='text-sm mt-2 md:text-base'>Ready to bring your next project to life? Let's connect and discuss how I can help you achieve your goals. You can send an email at <span style={{fontSize:18}}><b>wokodavid001@gmail.com</b></span></p>
+    <p className='text-sm mt-2 md:text-base'>Ready to bring your next project to life? Let's connect and discuss how I can help you achieve your goals. You can send an email at <span style={{fontSize:18}}><b>wokodavid001@gmail.com</b></span> or Whatsapp at <span style={{fontSize:18}}><b>+2349127724646</b></span> </p>
     </div>
     <div>
  <a href='mailto:wokodavid001@gmail.com' className='text-white bg-gray-900 inline-flex items-center px-6 h-12 rounded-xl gap-2 w-max border border-gray-900'>
