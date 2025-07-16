@@ -125,7 +125,10 @@ const WebsitesSection = () => {
             </div>
 
             <div className="relative">
-              <Image alt="Project Image" src={project.src} width="500" height="500" className="mt-8 -mb-4 md:-mb-0 lg:absolute lg:-left-10 lg:mt-0 object-contain lg:h-full lg:max-w-none" />
+                {
+                    project.src && <Image alt="Project Image" src={project.src} width="500" height="500" className="mt-8 -mb-4 md:-mb-0 lg:absolute lg:-left-10 lg:mt-0 object-contain lg:h-full lg:max-w-none" />
+                }
+              
      
             {/* <Image src={project.image} alt={project.title} className='mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:absolute lg:h-full lg:max-w-none lg:w-auto'/> */}
             </div>
